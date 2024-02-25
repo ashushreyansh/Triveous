@@ -91,7 +91,7 @@ app.get("/api/categories", async (req, res) => {
 
 // Get products by category
 app.get("/api/products", async (req, res) => {
-  const categoryId = req.query.category_id;
+  const categoryId = req.body.category_id;
   try {
     const result = await db.query(
       "SELECT * FROM products WHERE category_id = $1",

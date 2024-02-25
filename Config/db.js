@@ -1,7 +1,7 @@
 const pg = require("pg");
 
 const conString =
-  "postgres://nbtgwwle:BqeVKObgoM50cw9dBHMcjdF4bMnHrCvL@rain.db.elephantsql.com/nbtgwwle";
+  "postgres://nbtgwwle:BqeVKObgoM50cw9dBHMcjdF4bMnHrCvL@rain.db.elephantsql.com/nbtgwwle"; //insert your own connection url given by elephantSQL
 
 const client = new pg.Client(conString);
 
